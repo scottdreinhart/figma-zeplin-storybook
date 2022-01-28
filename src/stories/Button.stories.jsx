@@ -1,40 +1,83 @@
 import React from 'react';
-
 import { Button } from './components/Button';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    handleClick: { action: "click event" }
+  }
 };
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
+export const Red = Template.bind({})
+Red.args = {
+  bgColor: 'red',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'md',
+}
+export const Green = Template.bind({})
+Green.args = {
+  bgColor: 'Green',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'md',
+}
+export const Blue = Template.bind({})
+Blue.args = {
+  bgColor: 'blue',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'md',
+}
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
+export const Black = Template.bind({})
+Black.args = {
+  bgColor: 'black',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'md',
+}
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
+export const Small = Template.bind({})
 Small.args = {
-  size: 'small',
-  label: 'Button',
-};
+  bgColor: 'black',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'sm',
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+  bgColor: 'black',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'md',
+}
+
+export const Large = Template.bind({})
+Large.args = {
+  bgColor: 'black',
+  fgColor: 'white',
+  label: 'Click Me',
+  type: 'Button',
+  size: 'lg',
+}
+
+export const LongLabel = Template.bind({})
+LongLabel.args = {
+  bgColor: 'black',
+  fgColor: 'white',
+  label: 'Click Me - This is a longer label to show how the button grows',
+  type: 'Button',
+  size: 'lg',
+}
+

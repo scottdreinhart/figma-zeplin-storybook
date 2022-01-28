@@ -1,22 +1,32 @@
 {
-  "plugins": [
-    {
-      "name": "@zeplin/cli-connect-react-plugin"
-    }
-  ],
-  "projects": [
-    "61f39a9bc3e9ecb4e992b7dc"
-  ],
-  "components": [
-    {
-      "path": "src\\components\\button.js",
-      "zeplinNames": ["Demo Component"],
-      "zeplinIds": [
-        "61f39a9d098e3cb578a9b609"
-      ]
-    }
-  ],
-  "github": {
-        "repository": "example/react-components"
+    "plugins": [
+        {
+            "name": "@zeplin/cli-connect-react-plugin"
+        },
+        {
+            "name": "@zeplin/cli-connect-storybook-plugin",
+            "config": {
+                "url": "http://localhost:6006/",
+                "format": "new",
+                "startScript": "storybook"
+            }
+        }
+    ],
+    "projects": [
+        "61f3f4cd5b19c310e7ec281d"
+    ],
+    "components": [
+        {
+            "path": "src/stories/components/",
+            "zeplinIds": [
+                "61f3f4ce65de0c1193bf4142",
+                "61f3f4cf8d593eb5f295f11d",
+                "61f3f4cfcf2b01b6cefc1188",
+                "61f3f4cfee0db6688a3e253d"
+            ]
+        }
+    ],
+    "github": {
+        "repository": "scottdreinhart/figma-zeplin-storybook"
     }
 }
