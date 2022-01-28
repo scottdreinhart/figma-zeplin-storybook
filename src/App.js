@@ -1,9 +1,10 @@
 import './App.css';
+import Button from './stories/components/Button';
 
 function App() {
   return (
     <div className="App">
-     Hello World!
+      <Button />
     </div>
   );
 }

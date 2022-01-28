@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -17,12 +18,24 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "zeplin-connect": "zeplin connect",
-    "zeplin-connect-dev-mode": "zeplin connect --dev"
+    "zeplin-connect-dev-mode": "zeplin connect --dev",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -38,7 +51,17 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.4.15",
+    "@storybook/addon-essentials": "^6.4.15",
+    "@storybook/addon-links": "^6.4.15",
+    "@storybook/builder-webpack5": "^6.4.15",
+    "@storybook/manager-webpack5": "^6.4.15",
+    "@storybook/node-logger": "^6.4.15",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.15",
     "@zeplin/cli": "^1.1.13",
-    "@zeplin/cli-connect-react-plugin": "^1.1.1"
+    "@zeplin/cli-connect-react-plugin": "^1.1.1",
+    "storybook": "^6.4.15",
+    "webpack": "^5.67.0"
   }
 }
