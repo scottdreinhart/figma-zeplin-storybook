@@ -5,8 +5,9 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
-    handleClick: { action: "click event" }
-  }
+    handleClick: { action: "click event" },
+    value: { control: { type: 'text' } },
+    }
 };
 
 const Template = (args) => <Button {...args} />;
