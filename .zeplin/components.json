@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    {
+      "name": "@zeplin/cli-connect-react-plugin"
+    }
+  ],
+  "projects": [
+    "61f39a9bc3e9ecb4e992b7dc"
+  ],
+  "components": [
+    {
+      "path": "src\\components\\button.js",
+      "zeplinIds": [
+        "61f39a9d098e3cb578a9b609"
+      ]
+    }
+  ]
+}
