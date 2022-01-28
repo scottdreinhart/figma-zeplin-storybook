@@ -35,14 +35,6 @@ Button.propTypes = {
     handleClick: PropTypes.func,
 };
 
-Button.propTypes = {
-  primary: PropTypes.bool,
-  backgroundColor: PropTypes.string,
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-};
-
 Button.defaultProps = {
     type: 'button',
     label: 'Lorem Ipsum',
@@ -50,11 +42,4 @@ Button.defaultProps = {
     fgColor: 'white',
     size: 'md',
     onClick: undefined,
-};
-
-Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
-  onClick: undefined,
 };
